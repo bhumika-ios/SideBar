@@ -55,6 +55,7 @@ struct MainView: View {
                         .rotationEffect(.init(degrees: show ? 50 : 0))
                     }
                 })
+                .offset(y: -8)
                 .padding()
                 ,alignment: .topLeading
             )
