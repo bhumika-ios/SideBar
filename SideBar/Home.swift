@@ -23,11 +23,11 @@ struct Home: View {
     }
 }
 
-//struct Home_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MainView()
-//    }
-//}
+struct Home_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
+    }
+}
 struct HomePage: View{
     var body: some View{
         NavigationView{
