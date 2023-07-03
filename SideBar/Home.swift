@@ -9,6 +9,10 @@ import SwiftUI
 
 struct Home: View {
     @Binding var selectedTab: String
+    init(selectedTab: Binding<String>) {
+        self._selectedTab = selectedTab
+        UITabBar.appearance().isHidden = true
+    }
     var body: some View {
         TabView(selection: $selectedTab){
             HomePage()
