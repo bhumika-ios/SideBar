@@ -29,7 +29,7 @@ struct MainView: View {
                     
             }
             .scaleEffect(show ? 0.84 : 1)
-            .offset(x: show ? getRect().width - 120 : 0)
+            .offset(x: show ? getRect().width - 220 : 0)
             .ignoresSafeArea()
             .overlay(
                 Button(action: {
