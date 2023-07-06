@@ -12,6 +12,7 @@ struct TabButton: View {
     var title: String
     var animation: Namespace.ID
     @Binding var selectedTab: String
+    @State var show = false
     var body: some View {
        Button(action: {
            withAnimation(.spring()){
