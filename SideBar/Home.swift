@@ -36,7 +36,7 @@ struct Home: View {
                     Image(systemName: "questionmark.circle")
                 }
         }
-       
+        .accentColor(Color("Purple"))
     }
 }
 
