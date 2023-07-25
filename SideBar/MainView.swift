@@ -17,7 +17,10 @@ struct MainView: View {
                 Color("Purple")
                     .edgesIgnoringSafeArea(.all)
                 
-                SideMenu(selectedTab: $selectedTab)
+             
+                        SideMenu(selectedTab: $selectedTab)
+                       
+                                
                 
                 ZStack {
                     Color.white
@@ -74,6 +77,12 @@ struct MainView: View {
                     alignment: .topLeading
                 )
             }
+            .onChange(of: selectedTab) { _ in
+                            // Hide the side menu when a tab is selected
+                            withAnimation {
+                                show = false
+                            }
+                        }
         }
     }
 }

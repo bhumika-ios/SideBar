@@ -17,6 +17,7 @@ struct TabButton: View {
        Button(action: {
            withAnimation(.spring()){
                selectedTab = title
+               show = false
            }
        }, label: {
            HStack(spacing:15){
